@@ -175,7 +175,7 @@ let styles = StyleSheet.create({
     color: 'rgb(0, 122, 255)',
   },
   defaultSelectedIcon: {
-    tintColor: 'rgb(0, 122, 255)',
+    backgroundColor: 'rgb(0, 122, 255)',
   },
 });
 
