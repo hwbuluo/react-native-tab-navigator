@@ -15,6 +15,7 @@ export default class Tab extends React.Component {
     testID : PropTypes.string,
     title: PropTypes.string,
     titleStyle: Text.propTypes.style,
+    tabStyle: Text.propTypes.style,
     badge: PropTypes.element,
     onPress: PropTypes.func,
     hidesTabTouch: PropTypes.bool,
@@ -47,7 +48,7 @@ export default class Tab extends React.Component {
       });
     }
 
-    let tabStyle = [styles.container, title ? null : styles.untitledContainer];
+    let tabStyle = [styles.container, title ? null : styles.untitledContainer,this.props.tabStyle];
     return (
       <TouchableOpacity
         testID={this.props.testID}
